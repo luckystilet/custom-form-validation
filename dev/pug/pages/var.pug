@@ -1,0 +1,47 @@
+extends ../layout/inner
+
+block title
+	| Вариант АБ
+
+block content
+	.container
+		.form-section
+			.form-section__left.form-section-left
+				.form-section-left__overlay
+					.form-section-left__number 47,6%
+					.form-section-left__descr пользователей — Вариант А
+				a(href="index.html").next-page-link form
+				.form-section-left__list-wrapper
+					ul.form-section-left__list
+						li.form-section-left__item
+							a.form-section-left__link(href="") название1
+						li.form-section-left__item
+							a.form-section-left__link(href="") название2
+						li.form-section-left__item
+							a.form-section-left__link(href="") название3
+						li.form-section-left__item
+							a.form-section-left__link(href="") название4
+						li.form-section-left__item
+							a.form-section-left__link(href="") очень длинное название5
+						li.form-section-left__item
+							a.form-section-left__link(href="") очень очень длинное название6
+						li.form-section-left__item
+							a.form-section-left__link(href="") длинное название7
+						li.form-section-left__item
+							a.form-section-left__link(href="") длинное название8
+			.form-block.form-block--orange
+				form.form-block__main(id="form-block__main" action="")
+					.form-block__title Lorem ipsum
+					.form-block__body
+						.form-block__radio-group
+							label.form-block__label
+								input(type="radio" id="option_1" name="radio" data-rule="radio").form-block__radio
+								.form-block__radio-custom.form-block__radio-custom--man
+									| Вариант 1
+							label.form-block__label
+								input(type="radio" id="option_2" name="radio" data-rule="skip").form-block__radio
+								.form-block__radio-custom.form-block__radio-custom--woman
+									| Вариант 2
+						input(class="form-block__submit" type="submit" id="form-submit" name="submit-btn" value="продолжить" data-rule="submit" onclick="event.preventDefault();")
+		
+

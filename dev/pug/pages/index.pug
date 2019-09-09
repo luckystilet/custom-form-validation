@@ -1,0 +1,54 @@
+extends ../layout/main
+
+block title
+	| Форма
+
+block content
+	.container
+		.form-section
+			.form-section__left.form-section-left
+				a(href="var.html").next-page-link next page
+				.form-section-left__list-wrapper
+					ul.form-section-left__list
+						li.form-section-left__item
+							a.form-section-left__link(href="") название1
+						li.form-section-left__item
+							a.form-section-left__link(href="") название2
+						li.form-section-left__item
+							a.form-section-left__link(href="") название3
+						li.form-section-left__item
+							a.form-section-left__link(href="") название4
+						li.form-section-left__item
+							a.form-section-left__link(href="") очень длинное название5
+						li.form-section-left__item
+							a.form-section-left__link(href="") очень очень длинное название6
+						li.form-section-left__item
+							a.form-section-left__link(href="") длинное название7
+						li.form-section-left__item
+							a.form-section-left__link(href="") длинное название8
+			.form-block
+				form.form-block__main(id="form-block__main" action="")
+					.form-block__title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					.form-block__body
+						.form-block__row-title Я ищу:
+						.form-block__radio-group
+							label.form-block__label
+								input(type="radio" name="radio" checked data-rule="radio").form-block__radio
+								.form-block__radio-custom.form-block__radio-custom--man
+									| Вариант 1
+							label.form-block__label
+								input(type="radio" name="radio" data-rule="skip").form-block__radio
+								.form-block__radio-custom.form-block__radio-custom--woman
+									| Вариант 2
+						.form-block__row-title Ваше имя:
+						input(class="form-block__input" type="text" name="name" value="" data-rule="required name")
+						.form-block__row-title Email:
+						input(class="form-block__input" type="text" name="email" value="" data-rule="required email")
+						.form-block__row-title Придумайте пароль:
+						input(class="form-block__input" type="text" name="pass" value="" data-rule="required pass")
+						.form-block__checkbox-container
+							input(class="form-block__checkbox" type="checkbox" id="checkbox" name="checkbox" value="" data-rule="checkbox")
+							span.form-block__checkbox-text Регистрируясь, вы подтверждаете, что вам уже исполнилось 18 лет и вы ознакомились с условиями пользования сайтом.
+						input(class="form-block__submit" type="submit" id="form-submit" name="submit-btn" value="продолжить" data-rule="submit" onclick="event.preventDefault();")
+		
+
